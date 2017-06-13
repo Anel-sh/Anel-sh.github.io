@@ -1,0 +1,361 @@
+body {
+  min-width: 960px;
+  margin:0;
+  padding:0;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  background-color:#111;
+  background-image: url('https://raw.githubusercontent.com/anna-v/barbershop/master/img/bckgr-index.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 1800px auto;
+}
+.main-header {
+  margin-bottom: 60px;
+  background:#000;
+  padding: 5px 0;
+}
+.container{
+  /*для оформления схемы*/
+  width: 940px;
+  margin: 0 auto;
+  min-height: 20px;
+  padding: 0 10px;
+}
+.main-navigation {
+  float: left;
+  width: 780px;
+  min-height: 50px; 
+}
+.main-navigation ul {
+  margin:0;
+  padding:0;
+  font-size:0;
+  list-style:none;
+}
+.main-navigation li {
+  display: inline-block;
+  vertical-align:top;
+  font-size: 16px;
+  line-height:20px;
+}
+.main-navigation a {
+  display: block;
+  padding: 25px 20px;
+  text-decoration:none;
+  color: #fff;
+}
+.main-navigation a:hover { /* покрасить фон проводимого мышкой элемента меню серым */
+  background:#242424;
+}
+.main-navigation .active a:hover{ /* фон не менять для активной страницы */
+   background:none;
+}
+.main-navigation .active a {
+  position: relative;
+}
+.main-navigation .active a:after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:20px;;
+  right: 20px;
+  height:5px;
+  background:white;
+}
+.user-block { /* рамка для кнопки Вход */
+  float: right;
+  max-width: 140px;
+  /*width: 50px;*/
+  min-height: 50px;
+}
+.login { /* стилизовать кнопку вход */
+  position: relative;
+  display: inline-block;
+  vertical-align:top;
+  padding-left: 50px;
+  padding: 25px 20px;
+  font-size:16px;
+  line-height:20px;
+  text-decoration: none;
+  color: #fff;
+}  
+.login img {
+  margin-right: 5px;
+  margin-top: 5px;
+  vertical-align: bottom;
+}
+/*
+.login:before { 
+  content:"";
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  width: 18px;
+  height: 18px;
+  background: transparent url("http://www.iconsdb.com/icons/preview/guacamole-green/login-xxl.png") no-repeat;
+}*/
+.login:hover {
+  background:#242424;
+}
+.login:hover:before {
+  opacity: 1;
+}
+.clearfix:after{  /* распорка*/
+  content:'';
+  display:table;
+  clear:both;
+}
+.main-container {
+  margin: 30px auto;
+}
+.logo{
+  width: 368px;
+  height: 204px;
+  margin:0 auto;
+  margin-bottom: 25px;
+  min-height: 120px;
+}
+.logo img {
+  width:368px;
+  height:204px;
+}
+.features-row {
+  margin-bottom: 80px;
+  padding: 5px;
+}
+.features-item {
+  float: left;
+  width: 290px;
+  margin-right: 20px;
+  text-align: center;
+  min-height: 150px;
+}
+.features-item:last-child {
+  margin-right:0;
+} 
+
+.features-title {
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 42px;
+}
+.features-title:after { /* иконки */
+  content:"";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+.features-item p {
+  margin: 10px;
+}
+.index-content {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+  color: #000; /*   цвет букв черный*/
+  background: url("") no-repeat center,#f8f5f2 url("http://i.imgur.com/YtkFoYk.jpg");
+}
+.content-column-title {
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: 30px; /* высота строки */
+}
+.content-column-left,.content-column-right {
+  width: 250px;
+  min-height: 230px;
+}
+.content-column-left {
+  width: 350px;
+  float: left;
+}
+.content-column-right {
+  width: 300px;
+  float: right;
+}
+.main-footer {
+  padding: 20px 0;
+}
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 80px;
+  min-height: 80px;
+}
+.footer-contacts a{
+  color: #fff;
+}
+.footer-contacts a:hover { /*при проводе мышкой убрать подчеркивание*/
+  text-decoration: none;
+}
+.footer-social {
+   float: left;
+   text-align: center;
+   width: 140px;
+   min-height: 80px;
+}
+.footer-social img {
+  margin-top: 8px;
+}
+.footer-social p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.footer-copyright {
+  float: right;
+  max-width:320px;
+  width: 220px;
+  min-height: 80px;
+}
+.footer-copyright p {
+    margin-bottom: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.news-preview {
+  margin: 0;
+  padding:0;
+  list-style: none; /*убрать маркеры слева на новостях */
+}
+.news-preview li {
+  margin-bottom: 25px;
+}
+.news-preview time {
+  text-transform:none;
+}
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 33px;
+  margin-right: 16px;
+  font-size: 14px;
+  font-family:"PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration:none;
+  text-transform: uppercase;
+  text-align:center;
+  color: #fff;
+  background:#000;
+  border:none;
+  outline: none;
+  cursor: pointer; /* превратить курсор в руку */
+}
+.btn:hover,.btn:active {
+  background: #663d15;
+}
+.btn:disabled {
+  cursor: default;
+  opacity: .5;
+}
+.btn:disabled:hover {
+  background: #000;
+}
+.gallery {
+  position: relative;
+  height: 260px;
+}
+.gallery-content {
+  height: 164px;
+  margin:0;
+  border: 7px solid white;
+  background: #ccc;
+}
+.gallery-content img {
+  width:285px;
+  height:164px;
+}
+.gallery .btn {
+  position :absolute;
+  bottom:0;
+  width: 140px;
+  margin: 0;
+}
+.gallery-prev {
+  left: 0;
+}
+.gallery-next {
+  right: 0;
+}
+.index-content p {
+  margin: 0:
+  margin-bottom: 25px;
+}
+.appointment-form input { /* для полей ввода Записаться*/
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 106px;
+  padding: 10px 15px;
+  border: 2px solid #000;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000;
+  background: #f9f6f3;
+  outline: none;
+}
+.appointment-form input:focus { /* применяется тогда, когда фокус на этом поле*/
+  border: 2px solid #663d15;
+}
+.appointment-form input:nth-child(2n) { /* обнулять правое поле у четных элементов  (2n)*/
+  margin-right: 0;
+}
+.appointment-form .btn {
+  clear: both;  /* видеть элементы float */
+  width: 100%;
+}
+.main-footer { /*  подвал сайта*/
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background: #252525 url("");
+}
+.social-btn {
+  display: inline-block;
+  vertical-align: top;
+  width: 43px;
+  height: 43px;
+  font-size: 0;
+  text-decoration: none;
+  background: #000 url("") no-repeat center;
+}
+.social-btn-vk {
+  background-position: 9px -968px;
+}
+.social-btn-fb {
+  background-position: 16px -691px;
+}
+.social-btn-inst {
+  background-position: 11px -832px;
+}
+.social-btn-vk:hover{
+  background-position: 9px -902px;
+}
+.social-btn-fb:hover{
+  background-position: 16px -619px;
+}
+.social-btn-inst:hover{
+  background-position: 11px -762px;
+}
+.footer-copyright .btn {
+  margin-right: 20px;
+}
+.footer-copyright .btn:hover {
+  color: #000;
+  background: #fff;
+}
+
